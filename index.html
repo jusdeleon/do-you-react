@@ -9,13 +9,25 @@
 <script src="resources/lib/react/JSXTransformer.js"></script>
 
 <script type="text/jsx">
-	var HelloWorld = React.createClass({
-		render: function(){
-			return <div>Hello World</div>;
+	var Avatar = React.createClass({
+
+		getDefaultProps: function() {
+			return {
+				path: "assets/img/react.png"
+			}
+		},
+
+		render: function() {
+			return (
+				<div>
+					<img src={this.props.path} />
+				</div>
+			);
 		}
+
 	});
 
-	React.render(<HelloWorld />, document.body);
+	React.render(<Avatar path="assets/img/laravel.png"/>, document.body);
 </script>
 
 </body>
