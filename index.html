@@ -4,31 +4,8 @@
 	<title></title>
 </head>
 <body>
-
-<script src="resources/lib/react/react.min.js"></script>
-<script src="resources/lib/react/JSXTransformer.js"></script>
-
-<script type="text/jsx">
-	var Avatar = React.createClass({
-
-		getDefaultProps: function() {
-			return {
-				path: "assets/img/react.png"
-			}
-		},
-
-		render: function() {
-			return (
-				<div>
-					<img src={this.props.path} />
-				</div>
-			);
-		}
-
-	});
-
-	React.render(<Avatar path="assets/img/laravel.png"/>, document.body);
-</script>
-
+	<script src="resources/lib/react/react.min.js"></script>
+	<script src="resources/lib/react/JSXTransformer.js"></script>
+	<script type="text/jsx" src="resources/src/components/Avatar.js"></script>
 </body>
 </html>
